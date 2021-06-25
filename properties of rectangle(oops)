@@ -1,0 +1,39 @@
+class rectangle{
+    private double len;
+    private double bre;
+    public double getLen(){
+        return len;
+        
+    }
+    public double getBre(){
+        return bre;
+        
+    }
+    public void setLen(double l)
+    {
+        len=l;
+    }
+    
+      public void setBre(double b)
+    {
+        bre=b;
+    }
+    public double area(){
+        return len*bre;
+        
+    }
+      public double perimeter(){
+        return  2* (len+bre);
+        
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	 rectangle r=new rectangle();
+	 r.setLen(10);
+	 r.setBre(20);
+	 System.out.println("AREA"+r.area());
+	  System.out.println("perimeter"+r.perimeter());
+	}
+}
