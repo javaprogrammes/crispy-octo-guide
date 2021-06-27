@@ -1,0 +1,44 @@
+class rectangle{
+  int length;
+ int breadth;
+    rectangle()
+    {
+        length=breadth=1;
+    }
+    rectangle(int len,int bre)
+    {
+        length=len;
+        breadth=bre;
+        
+    }
+    
+}
+class cuboid extends rectangle{
+    int  height;
+    cuboid()
+    {
+        height=1;
+    }
+    cuboid(int h)
+    {
+        height=h;
+    }
+    cuboid(int len,int bre,int h)
+    {
+        super(len,bre);
+        height=h;
+    }
+    
+    int volume()
+    {
+        return length*breadth*height;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	cuboid c1=new cuboid(10,20,30);
+
+	System.out.println(c1.volume());
+	}
+}
